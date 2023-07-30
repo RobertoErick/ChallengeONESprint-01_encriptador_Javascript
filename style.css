@@ -1,0 +1,42 @@
+body{
+    background: azure;
+    display: flex;
+    justify-content: center;
+}
+
+.ingresar-texto{
+    position: relative;
+}
+
+.ingresar-texto label{
+    position: absolute;
+    left: 5px;
+}
+
+.mi-textarea{
+    position: absolute;
+}
+
+.contenedor_encriptar_texto{
+    background: white;
+    border-radius: 2em;
+    margin: 10px 10px 10px 10px;
+}
+
+.aviso{
+    display: flex;
+    margin: 10px 0 10px 0;
+    
+}
+
+.aviso p{
+    margin: 0 0 0 10px;
+}
+
+.botones{
+    width: 100%;
+}
+
+.botones__btn{
+    width: 200px;
+}
