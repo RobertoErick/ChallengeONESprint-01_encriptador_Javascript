@@ -1,5 +1,5 @@
 body{
-    background: azure;
+    background: #EBF5FA;
     display: flex;
     justify-content: center;
 }
@@ -10,23 +10,44 @@ body{
 
 .ingresar-texto label{
     position: absolute;
-    left: 5px;
+    left: 40px;
+    top: 20px;
 }
 
-.mi-textarea{
-    position: absolute;
+#mi-textarea{
+    background-color: transparent;
+    border: none;
+}
+
+label{
+    font-size: 25px;
+    color: #265084 ;
+    font-weight: bold;
 }
 
 .contenedor_encriptar_texto{
     background: white;
     border-radius: 2em;
     margin: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor_encriptar_texto h2{
+    width: 70%;
+    text-align: center;
+}
+
+.contenedor_encriptar_texto p{
+    width: 80%;
+    text-align: center;
 }
 
 .aviso{
     display: flex;
     margin: 10px 0 10px 0;
-    
 }
 
 .aviso p{
@@ -38,5 +59,19 @@ body{
 }
 
 .botones__btn{
-    width: 200px;
+    width: 48%;
+    height: 50px;
+    border-radius: 20px;
+    border-color: #265084 ;
+}
+
+.botones__btn#Encriptar{
+    margin-right: 20px;
+    color: white;
+    background-color: #265084 ;
+}
+
+.botones__btn#Desencriptar{
+    color: #265084 ;
+    background-color: #D2E0EA ;
 }
