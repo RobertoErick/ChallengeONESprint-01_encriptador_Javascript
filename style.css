@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 .Logo{
@@ -73,7 +74,7 @@
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 82%;
+    top: 83%;
 }
 
 .btn-encriptar {
@@ -130,17 +131,56 @@
     border-radius: 32px;
 }
 
+.no-encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    background: #fff;
+}
+
+.si-encrpitado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    background: #fff;
+    display: none;
+}
+
+.encriptado img{
+    background: transparent;
+}
+
+#texto-encriptado{
+    width: 100%;
+    height: 75%;
+    margin: 5% 0 20% 0;
+    background: transparent;
+    border: none;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 .mensaje-encriptado{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1%;
-    gap: 16px;
+    gap: 20px;
     position: absolute;
-    width: 100%;
+    width: 98%;
     top: 65%;
     text-align: center;
+    background: #fff;
 }
 
 .mensaje-encriptado h2{
@@ -152,6 +192,7 @@
     line-height: 120%;
     text-align: center;
     color: #343a40;
+    background-color: transparent;
 }
 
 .mensaje-encriptado p{
@@ -163,6 +204,7 @@
     line-height: 150%;
     text-align: center;
     color: #495057;
+    background-color: transparent;
 }
 
 .encriptado img {
@@ -170,6 +212,24 @@
     width: 80%;
     height: 50%;
     top: 15%;
+}
+
+.btn-copiar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    padding: 5.8%;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #0a2871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
 }
 
 /* Diseño responsivo */
@@ -204,6 +264,7 @@
         width: 80%;
         left: 10%;
         top: 70%;
+        gap: 2%;
     }
 
     .btn-encriptar, .btn-desencriptar{
@@ -219,19 +280,29 @@
 
     .encriptado{
         width: 80%;
-        height: 15%;
         left: 10%;
+        height: 20%;
         top: 80%;
     }
 
     .mensaje-encriptado{
         width: 100%;
-        top: 5%;
+        height: 30%;
+        top: 30%;
     }
 
     .encriptado img{
         top: 0;
         display: none;
         visibility: hidden;
+    }
+
+    #texto-encriptado{
+        height: 30%;
+        margin: 2% 0 2% 0;
+    }
+
+    .btn-copiar{
+        padding: 3%;
     }
 }
